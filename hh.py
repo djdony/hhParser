@@ -73,21 +73,3 @@ def write_file(jobs):
 jobs = hh_parse(base_url, headers)
 print('Found total' + str(len(jobs)) + 'jobs')
 write_file(jobs)
-
-
-
-#
-# r = requests.get('https://www.tez-tour.com/catalog/turkey/antalya.html')
-# html1 = BS(r.content, 'html.parser')
-# file = open('other.html','w')
-# html=html1.find(id="hotel-list-place")
-# for tr in html.find_all('tr'):
-#     print(tr)
-#
-#
-# #for el in html.select('hotel-list-place'):
-# #    title = el.select('.hotel-list')
-# #    print(title)
-#
-# file.write(str(html1))
-# file.close()
